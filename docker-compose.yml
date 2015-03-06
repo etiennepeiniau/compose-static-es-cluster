@@ -1,0 +1,21 @@
+e1:
+  image: dockerfile/elasticsearch
+  volumes:
+    - ./e1:/data
+  ports: 
+    - 9201:9200
+  command: /elasticsearch/bin/elasticsearch -Des.config=/data/elasticsearch.yml
+e2:
+  image: dockerfile/elasticsearch
+  volumes:
+    - ./e2:/data
+  ports: 
+    - 9202:9200
+  command: /elasticsearch/bin/elasticsearch -Des.config=/data/elasticsearch.yml
+e3:
+  image: dockerfile/elasticsearch
+  volumes:
+    - ./e3:/data
+  ports: 
+    - 9203:9200
+  command: /elasticsearch/bin/elasticsearch -Des.config=/data/elasticsearch.yml

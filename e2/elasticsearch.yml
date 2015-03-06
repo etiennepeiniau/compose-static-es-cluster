@@ -1,0 +1,8 @@
+path:
+  logs: /data/logs
+  data: /data/data
+  plugins: /data/plugins
+cluster:
+  name: es-cluster
+node:
+  name: e2
